@@ -1,0 +1,57 @@
+$primary-color: green;
+$font-family: "Arial", sans-serif;
+
+body {
+  font-family: $font-family;
+  background-color: white;
+  padding: 40px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 30px;
+  max-width: 200px;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
